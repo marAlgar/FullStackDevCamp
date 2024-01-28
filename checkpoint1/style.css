@@ -1,0 +1,88 @@
+/*GRID ONE STYLES*/
+.gridOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*GRID TWO STYLES*/
+.gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.col-1 {
+    background-color: red;
+}
+
+.col-2 {
+    background-color: blue;
+}
+
+.col-3 {
+    background-color: yellow;
+}
+
+/*GRID THREE STYLES*/
+.gridThree {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 500px;
+    height: 300px;
+}
+
+.gridThree > .first-div {
+    background-color: green;
+}
+
+.gridThree > .second-div {
+    background-color: orange;
+}
+
+.gridThree > .second-div img {
+    width: 500px;
+    height: 225px;
+    object-fit: cover;
+}
+
+/*GRID FOUR STYLES*/
+.gridFour {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    background-color: green;
+}
+
+.gridFour > #second-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*GRID FIVE STYLES*/
+.gridFive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+}
+
+.gridFive > .second-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gridFive > .second-row img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*GRID SIX STYLES*/
+.gridSix {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+    background-color: gray;
+}
+
+.gridSix p {
+    font-family: 'Lato', sans-serif;
+}
