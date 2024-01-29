@@ -5,7 +5,7 @@ var reload = browserSync.reload;
 gulp.task('serve', function() {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./module-1/flexbox/"
     }
   });
 
