@@ -30,15 +30,15 @@
     height: 300px;
 }
 
-.gridThree > .first-div {
+.gridThree .first-div {
     background-color: green;
 }
 
-.gridThree > .second-div {
+.gridThree .second-div {
     background-color: orange;
 }
 
-.gridThree > .second-div img {
+.gridThree .second-div img {
     width: 500px;
     height: 225px;
     object-fit: cover;
@@ -52,7 +52,7 @@
     background-color: green;
 }
 
-.gridFour > #second-row {
+.gridFour #second-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -64,12 +64,12 @@
     width: 500px;
 }
 
-.gridFive > .second-row {
+.gridFive .second-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.gridFive > .second-row img {
+.gridFive .second-row img {
     width: 200px;
     height: 200px;
     object-fit: cover;
