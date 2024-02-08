@@ -41,10 +41,3 @@ print(f"My number is {number}")
 # Exercise 9: Print “hello world”.
 
 print("hello world")
-
-
-
-name = ‘Marcela’ 
-string = f‘My name is {name}.’
-
-print(string)
