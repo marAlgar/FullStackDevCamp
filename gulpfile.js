@@ -5,7 +5,7 @@ var reload = browserSync.reload;
 gulp.task('serve', function() {
   browserSync.init({
     server: {
-      baseDir: "./module-1/checkpoint2/"
+      baseDir: "./module-2/"
     }
   });
 
