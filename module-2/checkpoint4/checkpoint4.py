@@ -1,19 +1,20 @@
+import math
+
 # Exercise 1: Create a list, tuple, float, integer, decimal, and dictionary.
 
 list = [1, 2, 3, 4, 5]
 tuple = (1, 2, 3, 4, 5)
 float = 1.5
 integer = 1
-decimal = 1.5
+decimal = 1.6
 dictionary = {'name': 'John', 'age': 25}
 
 # Exercise 2: Round your float up.
 
-print(round(float))
+print(math.ceil(float))
 
 # Exercise 3: Get the square root of your float.
 
-import math
 print(math.sqrt(float))
 
 # Exercise 4: Select the first element from your dictionary.
