@@ -6,7 +6,7 @@ list = [1, 2, 3, 4, 5]
 tuple = (1, 2, 3, 4, 5)
 float = 1.5
 integer = 1
-decimal = 1.6
+decimal = 1.7
 dictionary = {'name': 'John', 'age': 25}
 
 # Exercise 2: Round your float up.
