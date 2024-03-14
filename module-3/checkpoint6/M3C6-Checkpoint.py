@@ -1,15 +1,14 @@
-class Usuario:
+class User:
 
-    def __init__(self, name_user, password):
-        self.name_user = name_user
+    def __init__(self, username, password):
+        self.username = username
         self.password = password
 
-# Crear un objeto Usuario 
+# Crear un objeto de la clase User 
 
-user1 = Usuario("user123", "password123")
+user = User("user123", "password123")
 
-# Mostrar los detalles del usuario 
+# Imprimir el nombre de usuario y la contraseña
 
-print("Detalles del usuario:")
-print("Nombre de usuario:", user1.name_user)
-print("Contraseña:", user1.password)
+print(f"Nombre de usuario: {user.username}")
+print(f"Contraseña: {user.password}")
