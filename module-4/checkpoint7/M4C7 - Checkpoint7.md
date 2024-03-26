@@ -1,6 +1,8 @@
 ### 1. ¿Qué diferencia a JavaScript de cualquier otro lenguaje de programación?
 
-JavaScript se destaca por varias características que lo distinguen de otros lenguajes de programación:
+JavaScript es el único lenguaje de programción que puede ser interpretado directamente por un navegador web. Además se caracteriza por ser un lenguaje orientado a objetos. Otra de las razones que lo hacen diferente es que la mayoría de las aplicaciones se han desarrollado con este lenguaje por lo que si quieres ser un desarrollador Web tu camino pasa por aprender este lenguaje de programación. Por último, destacar que es uno de los lenguajes más potentes en cuanto a la automatización de procesos se refiere.
+
+Entre los beneficios que presenta JavaScript se pueden encontrar lo siguientes:
 
 - **Interpretado en el navegador:** JavaScript es un lenguaje interpretado que se ejecuta en el navegador web del cliente. Esto permite que las interacciones del usuario con la página web sean dinámicas y receptivas sin necesidad de recargar la página.
   
@@ -86,14 +88,18 @@ console.log(texto1.concat(" ", texto2));
 ```
 
 Estas son solo algunas de las funciones disponibles para manipular cadenas en JavaScript. Hay muchas otras, como toUpperCase(), toLowerCase(), slice(), substring(), entre otras, que se utilizan para diversas operaciones de manipulación de cadenas.
+
 ### 4. ¿Qué es un condicional?
 Un condicional es una estructura de control que permite ejecutar cierto bloque de
 código si se cumple una condición especificada. Estas condiciones se evaluan como
 verdaderas o falsas y determinan qué acción tomar.
 
-En JavaScript, los condicionales más comunes son el **if**, **else if** y **else**.
+Se deben tener en cuenta los siguientes aspectos para componer un condicional:
+• **La indentación:** se trata del nivel o tabulación al que se ha escrito el código e indica si una o varias líneas de código se encuentran enlazadas con el condicional.
+• **La sintaxsis:** en JavaScript se utilizan las palabras: **if**, **else if** y **else**. Las dos primeras llevan asociadas una o varias condiciones y el **else** lleva la condición asociada si las anteriores no se han cumplido. Tras las palabras **if** y **else if**, van los paréntesis en los que se dicta la condición. Después, entre **{ }**, el código a ejecutar si se cumple la condición. Por último, **else** y el código que se ejecutará si no se han cumplido ninguna de las anteriores condiciones.
+• **Operadores lógicos AND y OR:** **&&** y **||**. El **&&** corresponde a la conjunción copulativa, sirve para enlazar varias condiciones que se deben cumplir. El operador **||** corresponde a la conjunción disyuntiva, y el código se ejecutará siempre que se cumple cualquiera de las condiciones expuestas.
 
-Aquí tienes un ejemplo:
+Aquí tienes un ejemplo simple:
 ```javascript
 const edad = 18;
 if (edad >= 18) {
@@ -106,8 +112,7 @@ Este código imprimirá "Eres mayor de edad" si la variable edad es mayor o igua
 
 ### 5. ¿Qué es un operador ternario?
 El operador ternario es una forma abreviada de escribir una declaración **if...else** en una sola línea.
-
-El operador evalúa una expresión y devuelve un resultado basado en si esa expresión es verdadera o falsa. Tiene la siguiente sintaxis:
+El operador evalúa una expresión y devuelve un resultado basado en si esa expresión es verdadera o falsa. Contiene tres operandos: el primero es la condición, el segundo es lo que devuelve si la condición es true. y el tercero lo devuelve si la condición es false. Tiene la siguiente sintaxis:
 ```javascript
 condición ? SiVerdadero : SiFalso;
 ```
@@ -125,14 +130,14 @@ Este código asigna el mensaje "Mayor de edad" a la variable mensaje si la edad 
 El operador ternario es especialmente útil cuando se desea asignar un valor a una variable basado en una condición en una sola línea de código. Sin embargo, es importante usarlo con moderación para mantener la legibilidad del código.
 
 ### 6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?
-• Declaración de función: Se define utilizando la palabra clave **function** seguida del nombre de la función y el cuerpo de la función. Pueden ser invocadas antes de su declaración debido al hoisting.
+• **Declaración de función:** Se define utilizando la palabra clave **function** seguida del nombre de la función y el cuerpo de la función. Pueden ser invocadas antes de su declaración debido al hoisting. 
 Ejemplo:
 ```javascript
 function nombreDeFuncion() {
  // cuerpo de la función
 }
 ```
-• Expresión de función: Se asigna a una variable y se puede utilizar como cualquier otra variable. No pueden ser invocadas antes de su declaración.
+• **Expresión de función:** Se asigna a una variable y se puede utilizar como cualquier otra variable. No pueden ser invocadas antes de su declaración.
 Ejemplo:
 ```javascript
 var nombreDeFuncion = function() {
@@ -142,13 +147,12 @@ var nombreDeFuncion = function() {
 La principal diferencia práctica entre una declaración de función y una expresión de función radica en cómo se comportan en relación con la elevación y a disponibilidad del código. Las declaraciones de función son útiles cuando se necesita que una función esté disponible en todo el ámbito actual, mientras que las expresiones de función brindan más flexibilidad y se pueden asignar a variables o pasar como argumentos a otras funciones.
 
 ### 7. ¿Qué es la palabra clave "this" en JS?
-La palabra clave this en JavaScript se refiere al contexto de ejecución actual.
-Dependiendo de cómo se use, this puede hacer referencia a diferentes objetos:
+**This** en JavaScript es una palabra clave muy utilizada dentro de funciones y clases, pues tiene un valor flexible y hace referencia al elemento en cuestión. Es decir, si estamos creando cualquier función, la palabra clave **this** se usará para representar o llamar al objeto que dicha función está modificando.
+Dependiendo de cómo se use, **this** puede hacer referencia a diferentes objetos:
 
-• En una función, this se refiere al objeto global (en el navegador, esto suele ser
-window).
-• En un método de un objeto, this se refiere al objeto que invocó el método.
-• En un constructor, this se refiere a la instancia recién creada del objeto.
+• En una función, **this** se refiere al objeto global.
+• En un método de un objeto, **this** se refiere al objeto que invocó el método.
+• En un constructor, **this** se refiere a la instancia recién creada del objeto.
 Ejemplo:
 ```javascript
 var persona = {
